@@ -205,3 +205,22 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# --- Security / API assessment additions ---
+# Secrets & keys
+**/.env
+**/.env.local
+**/*.pem
+**/*.key
+
+# Postman sensitive exports
+postman_collections/*secret*.json
+postman_collections/*current*.json
+
+# Burp temporary/junk (tetap commit *.burp via LFS di folder burp_projects/)
+burp_projects/.backup/
+burp_projects/tmp/
+
+# Evidence raw dumps (optional ignore if too noisy)
+findings/**/raw_logs/
+
